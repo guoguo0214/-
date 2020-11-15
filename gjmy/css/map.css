@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 13.88888889vw;
+}
+body {
+  font-size: 16px;
+}
+.title-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.title-img .one {
+  width: 6rem;
+  position: absolute;
+  display: none;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+  text-align: center;
+}
+.title-img .one .rule-img {
+  width: 6.5rem;
+  height: 4.08rem;
+  background-image: url(../images/pop_t.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  top: 0;
+  left: -0.3rem;
+}
+.title-img .one .rule-title {
+  padding: 0.2rem;
+  background-color: white;
+  border-radius: 0 0 0.1rem 0.1rem;
+}
+.title-img .one .rule-title div {
+  font-size: 0.25rem;
+  display: flex;
+  text-align: left;
+  padding: 0.2rem 0;
+}
+.title-img .two {
+  width: 6rem;
+  position: absolute;
+  display: none;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+}
+.title-img .two .rule-img {
+  width: 6.5rem;
+  height: 4.08rem;
+  background-image: url(../images/pop_t.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  top: 0;
+  left: -0.3rem;
+}
+.title-img .two .rule-title {
+  position: relative;
+  text-align: center;
+  /* div {
+                font-size: 0.25rem;
+                display: flex;
+                text-align: left;
+                padding: 20px 0;
+            } */
+}
+.title-img .two .rule-title .aa {
+  position: relative;
+  padding: 0.2rem 0.2rem 0.4rem;
+  background-color: white;
+  border-radius: 0 0 0.1rem 0.1rem;
+}
+.title-img .two .rule-title .introduce {
+  height: 0.5rem;
+  display: flex;
+  font-size: 0.25rem;
+  line-height: 0.5rem;
+}
+.title-img .two .rule-title .introduce div {
+  width: 33.33333333%;
+}
+.title-img .two .rule-title .title {
+  display: flex;
+  font-size: 0.18rem;
+  align-items: center;
+}
+.title-img .two .rule-title .title div {
+  width: 33.33333333%;
+  padding: 0.08rem 0.1rem;
+}
+.title-img .two .rule-title .follow {
+  width: 6rem;
+  height: 0.7rem;
+  background-image: url(../images/pop_c.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: -0.45rem;
+  left: 0;
+  z-index: 10;
+}
+.title-img .two .rule-title .write {
+  width: 100%;
+  margin-top: 0.2rem;
+  background-color: white;
+  padding: 0.4rem 0.2rem;
+  border-radius: 0.1rem;
+}
+.title-img .two .rule-title .write .introduce {
+  height: 0.5rem;
+  display: flex;
+  font-size: 0.25rem;
+  line-height: 0.5rem;
+}
+.title-img .two .rule-title .write .introduce div {
+  width: 33.33333333%;
+}
+.title-img .two .rule-title .sum {
+  text-align: left;
+  color: red;
+  font-size: 0.2rem;
+}
+section {
+  position: absolute;
+  width: 13.93rem;
+  height: 100%;
+  background-image: url(../images/mapbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+section .map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section .map div {
+  position: absolute;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section .map div:nth-of-type(1) {
+  width: 5.46rem;
+  height: 5.01rem;
+  background-image: url(../images/north_gray.png);
+  top: 0.1rem;
+  left: 0;
+}
+section .map div:nth-of-type(2) {
+  width: 2.43rem;
+  height: 4.47rem;
+  background-image: url(../images/south_gray.png);
+  top: 4.8rem;
+  left: 1.85rem;
+}
+section .map div:nth-of-type(3) {
+  width: 2.43rem;
+  height: 4.47rem;
+  background-image: url(../images/africa_gray.png);
+  top: 3.2rem;
+  left: 5.55rem;
+}
+section .map div:nth-of-type(4) {
+  width: 7.45rem;
+  height: 5.79rem;
+  background-image: url(../images/eurasia_gray.png);
+  top: 0.5rem;
+  left: 5.75rem;
+}
+section .map div:nth-of-type(5) {
+  width: 2.64rem;
+  height: 2.58rem;
+  background-image: url(../images/oceania_gray.png);
+  top: 6.3rem;
+  left: 11.1rem;
+}
+.timer {
+  width: 5rem;
+  height: 4.2rem;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.timer .length {
+  height: 2.1rem;
+  background-color: #d8f9ff;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.3rem 0.1rem;
+}
+.timer .length .head-length {
+  display: flex;
+}
+.timer .length .head-length .head-img {
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0.1rem;
+  border-radius: 50%;
+}
+.timer .length .head-length .head-img img {
+  width: 1.05rem;
+}
+.timer .length .head-length .day {
+  padding: 0.1rem;
+}
+.timer .length .head-length .day div {
+  height: 0.15rem;
+  border-radius: 0.2rem;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.timer .length .head-length .day .four {
+  width: 2.2rem;
+  margin-bottom: 0.15rem;
+  background-size: 0.15rem;
+  animation: move 1s linear infinite;
+}
+.timer .length .head-length .day .four::after {
+  width: 0.8rem;
+  content: '>15天';
+  position: absolute;
+  top: -0.07rem;
+  left: 2.2rem;
+  font-size: 0.2rem;
+}
+.timer .length .head-length .day .one {
+  width: 1.8rem;
+  margin-bottom: 0.15rem;
+  background-size: 0.15rem;
+  animation: move 1s linear infinite;
+}
+.timer .length .head-length .day .one::after {
+  width: 0.8rem;
+  content: '8-14天';
+  position: absolute;
+  top: -0.07rem;
+  left: 1.8rem;
+  font-size: 0.2rem;
+}
+.timer .length .head-length .day .two {
+  width: 1.4rem;
+  margin-bottom: 0.15rem;
+  background-size: 0.15rem;
+  animation: move 1s linear infinite;
+}
+.timer .length .head-length .day .two::after {
+  width: 0.8rem;
+  content: '4-7天';
+  position: absolute;
+  top: -0.07rem;
+  left: 1.4rem;
+  font-size: 0.2rem;
+}
+.timer .length .head-length .day .three {
+  width: 1rem;
+  background-size: 0.15rem;
+  animation: move 1s linear infinite;
+}
+.timer .length .head-length .day .three::after {
+  width: 0.8rem;
+  content: '<3天';
+  position: absolute;
+  top: -0.07rem;
+  left: 1rem;
+  font-size: 0.2rem;
+}
+.timer .length .star-name {
+  display: flex;
+  margin-top: 0.1rem;
+}
+.timer .length .star-name .star {
+  width: 1.25rem;
+}
+.timer .length .star-name .star img {
+  width: 0.23rem;
+}
+.timer .length .star-name .name {
+  padding-left: 0.1rem;
+  font-size: 0.2rem;
+  color: #0285f9;
+}
+.timer .length .star-name .name img {
+  width: 1.18rem;
+}
+.timer .length .balloon {
+  width: 0.69rem;
+  height: 0.95rem;
+  background-image: url(../images/balloon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  transform-origin: center;
+  animation: rotate 2s linear infinite;
+}
+.timer .draw {
+  overflow: hidden;
+  margin: 0.25rem 0;
+}
+.timer .draw .cost {
+  margin: 0.25rem 0;
+}
+.timer .draw .cost input {
+  width: 3.22rem;
+  height: 0.83rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: white;
+  background-image: url(../images/gray_btn.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0.3rem;
+}
+.timer .draw .look a {
+  font-size: 0.2rem;
+  color: #21768a;
+}
+.timer .draw .look a:nth-of-type(1) {
+  padding-right: 1rem;
+}
+.timer .draw .look a:nth-of-type(2) {
+  padding-left: 1rem;
+}
+.mc {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@keyframes rotate {
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes move {
+  100% {
+    background-position-y: 0.15rem;
+  }
+}
